@@ -9,6 +9,8 @@ except(IOError, ImportError):
     with open('README.md') as f:
         long_description = f.read()
 
+print(long_description)
+
 setup(
     name='cool_math',
     packages=find_packages(exclude=['test', '*.test', '*.test.*']),
